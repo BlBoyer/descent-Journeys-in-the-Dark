@@ -83,7 +83,7 @@ function Player({ chosenHero, chosenQuest }) {
   const [selectedWeapon, setSelectedWeapon] = useState({});
   const [offHand, setOffHand] = useState({})
 
-  function attacking(weapon, offHandWeapon) {
+    function attacking(weapon, offHandWeapon) {
     attackType.type = weapon.type;
     attackOn();
     setSelectedWeapon(weapon)
