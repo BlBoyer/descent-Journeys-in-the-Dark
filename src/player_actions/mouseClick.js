@@ -19,9 +19,28 @@ export let correctedPosition = {
 }
 
 export function targetClicked() {
-  //mouse correction
-  // console.log('Regular target Clicked')
-  for (let x = 0; x <= map1.mapSize.width; x += 50) {
+    //mouse correction, loop removed
+    if (mousePos.x % 50 === mousePos.x) {
+        correctedPosition.x = 0;
+
+    }
+    else if (mousePos.x % 50 > 0) {
+        correctedPosition.x = mousePos.x - mousePos.x % 50
+
+    }
+    else { correctedPosition.x = mousePos.x; }
+    if (mousePos % 50 === mousePos) {
+        correctedPosition = 0;
+
+    }
+    else if (mousePos.y % 50 > 0) {
+        correctedPosition.y = mousePos.y - mousePos.y % 50
+
+    }
+    else { correctedPosition.y = mousePos.y; }
+    console.log('Regular target Clicked')
+}
+  /*for (let x = 0; x <= map1.mapSize.width; x += 50) {
     if (mousePos.x > x) {
       correctedPosition.x = x;
     }
@@ -30,23 +49,51 @@ export function targetClicked() {
     if (mousePos.y > y) {
       correctedPosition.y = y;
     }
-  }
-}
+  }*/
 
 export function attackTargetClicked() {
+    if (mousePos.x % 50 === mousePos.x) {
+        correctedPosition.x = 0;
 
-  // console.log('Attack target Clicked')
+    }
+    else if (mousePos.x % 50 > 0) {
+        correctedPosition.x = mousePos.x - mousePos.x % 50
+
+    }
+    else { correctedPosition.x = mousePos.x; }
+    if (mousePos % 50 === mousePos) {
+        correctedPosition = 0;
+
+    }
+    else if (mousePos.y % 50 > 0) {
+        correctedPosition.y = mousePos.y - mousePos.y % 50
+
+    }
+    else { correctedPosition.y = mousePos.y; }
+    console.log('Attack target Clicked')
+}
   //mouse correction
-  for (let x = 0; x <= map1.mapSize.width; x += 50) {
+ 
+
+  /*for (let x = 0; x <= map1.mapSize.width; x += 50) {
     if (mousePos.x > x) {
       correctedPosition.x = x;
     }
-  }
+    }
+    if (mousePos % 50 === mousePos) {
+        correctedPos = 0;
+
+    }
+    else if (mousePos % 50 > 0) {
+        correctedPos = mousePos - mousePos % 50
+
+    }
+    else { correctedPos = mousePos; }
+
   for (let y = 0; y <= map1.mapSize.height; y += 50) {
     if (mousePos.y > y) {
       correctedPosition.y = y;
-    }
-  }
+    } */
 
   if (attackType.type === 'melee') {
     if ((heroToken.x - 50 === correctedPosition.x && heroToken.y === correctedPosition.y) ||
@@ -93,4 +140,3 @@ export function attackTargetClicked() {
       }
     }
   }
-}

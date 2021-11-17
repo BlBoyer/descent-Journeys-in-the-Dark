@@ -73,16 +73,24 @@ export let previousPosition = {
   x: 0,
   y: 0
 }
+//consolidate movement enableing
+function enableMovement() {
+    disableMovment.right = false;
+    disableMovment.left = false;
+    disableMovment.up = false;
+    disableMovment.down = false;
+    disableMovment.upRight = false;
+    disableMovment.downRight = false;
+    disableMovment.upLeft = false;
+    disableMovment.downLeft = false;
+}
 function moveUp() {
   // heroToken.dy = -heroToken.speed
   heroToken.y -= 50;
   previousPosition.y = heroToken.y + 50;
   previousPosition.x = heroToken.x;
 
-  disableMovment.right = false;
-  disableMovment.left = false;
-  disableMovment.up = false;
-  disableMovment.down = false;
+  enableMovement()
 }
 function moveDown() {
   // heroToken.dy = heroToken.speed
@@ -90,14 +98,7 @@ function moveDown() {
   previousPosition.y = heroToken.y - 50;
   previousPosition.x = heroToken.x;
 
-  disableMovment.right = false;
-  disableMovment.left = false;
-  disableMovment.up = false;
-  disableMovment.down = false;
-  disableMovment.upRight = false;
-  disableMovment.downRight = false;
-  disableMovment.upLeft = false;
-  disableMovment.downLeft = false;
+  enableMovement()
 
 }
 function moveLeft() {
@@ -106,14 +107,7 @@ function moveLeft() {
   previousPosition.x = heroToken.x + 50;
   previousPosition.y = heroToken.y;
 
-  disableMovment.right = false;
-  disableMovment.left = false;
-  disableMovment.up = false;
-  disableMovment.down = false;
-  disableMovment.upRight = false;
-  disableMovment.downRight = false;
-  disableMovment.upLeft = false;
-  disableMovment.downLeft = false;
+  enableMovement()
 }
 function moveRight() {
   // heroToken.dx = heroToken.speed
@@ -121,14 +115,7 @@ function moveRight() {
   previousPosition.x = heroToken.x - 50;
   previousPosition.y = heroToken.y;
 
-  disableMovment.right = false;
-  disableMovment.left = false;
-  disableMovment.up = false;
-  disableMovment.down = false;
-  disableMovment.upRight = false;
-  disableMovment.downRight = false;
-  disableMovment.upLeft = false;
-  disableMovment.downLeft = false;
+  enableMovement()
 }
 function moveUpRight() {
   // heroToken.dx = heroToken.speed
@@ -137,14 +124,7 @@ function moveUpRight() {
   previousPosition.x = heroToken.x - 50;
   previousPosition.y = heroToken.y + 50;
 
-  disableMovment.right = false;
-  disableMovment.left = false;
-  disableMovment.up = false;
-  disableMovment.down = false;
-  disableMovment.upRight = false;
-  disableMovment.downRight = false;
-  disableMovment.upLeft = false;
-  disableMovment.downLeft = false;
+  enableMovement()
 }
 
 function moveDownRight() {
@@ -154,14 +134,7 @@ function moveDownRight() {
   previousPosition.x = heroToken.x - 50;
   previousPosition.y = heroToken.y - 50;
 
-  disableMovment.right = false;
-  disableMovment.left = false;
-  disableMovment.up = false;
-  disableMovment.down = false;
-  disableMovment.upRight = false;
-  disableMovment.downRight = false;
-  disableMovment.upLeft = false;
-  disableMovment.downLeft = false;
+  enableMovement()
 }
 function moveUpLeft() {
   // heroToken.dx = heroToken.speed
@@ -170,14 +143,7 @@ function moveUpLeft() {
   previousPosition.x = heroToken.x + 50;
   previousPosition.y = heroToken.y + 50;
 
-  disableMovment.right = false;
-  disableMovment.left = false;
-  disableMovment.up = false;
-  disableMovment.down = false;
-  disableMovment.upRight = false;
-  disableMovment.downRight = false;
-  disableMovment.upLeft = false;
-  disableMovment.downLeft = false;
+  enableMovement()
 }
 
 function moveDownLeft() {
@@ -187,14 +153,7 @@ function moveDownLeft() {
   previousPosition.x = heroToken.x + 50;
   previousPosition.y = heroToken.y - 50;
 
-  disableMovment.right = false;
-  disableMovment.left = false;
-  disableMovment.up = false;
-  disableMovment.down = false;
-  disableMovment.upRight = false;
-  disableMovment.downRight = false;
-  disableMovment.upLeft = false;
-  disableMovment.downLeft = false;
+  enableMovement()
 }
 
 
