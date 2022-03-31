@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "https://blboyer.github.io/descent-Journeys-in-the-Dark/public/static/css/main.ce2cb43a.css",
-    "main.js": "https://blboyer.github.io/descent-Journeys-in-the-Dark/public/static/js/main.07904f60.js",
-    "static/js/787.425bec40.chunk.js": "https://blboyer.github.io/descent-Journeys-in-the-Dark/public/static/js/787.425bec40.chunk.js",
-    "index.html": "https://blboyer.github.io/descent-Journeys-in-the-Dark/public/index.html",
-    "main.ce2cb43a.css.map": "https://blboyer.github.io/descent-Journeys-in-the-Dark/public/static/css/main.ce2cb43a.css.map",
-    "main.07904f60.js.map": "https://blboyer.github.io/descent-Journeys-in-the-Dark/public/static/js/main.07904f60.js.map",
-    "787.425bec40.chunk.js.map": "https://blboyer.github.io/descent-Journeys-in-the-Dark/public/static/js/787.425bec40.chunk.js.map"
+    "main.css": "https://blboyer.github.io/descent-Journeys-in-the-Dark/static/css/main.ce2cb43a.css",
+    "main.js": "https://blboyer.github.io/descent-Journeys-in-the-Dark/static/js/main.f5564daa.js",
+    "static/js/787.425bec40.chunk.js": "https://blboyer.github.io/descent-Journeys-in-the-Dark/static/js/787.425bec40.chunk.js",
+    "index.html": "https://blboyer.github.io/descent-Journeys-in-the-Dark/index.html",
+    "main.ce2cb43a.css.map": "https://blboyer.github.io/descent-Journeys-in-the-Dark/static/css/main.ce2cb43a.css.map",
+    "main.f5564daa.js.map": "https://blboyer.github.io/descent-Journeys-in-the-Dark/static/js/main.f5564daa.js.map",
+    "787.425bec40.chunk.js.map": "https://blboyer.github.io/descent-Journeys-in-the-Dark/static/js/787.425bec40.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce2cb43a.css",
-    "static/js/main.07904f60.js"
+    "static/js/main.f5564daa.js"
   ]
 }
